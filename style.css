@@ -1,0 +1,194 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.15em;
+     margin: 0;
+    padding: 0;
+    scroll-behavior:smooth;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+   
+}
+* ::-webkit-scrollbar {
+    display: none;
+  }
+  body{
+    background-image: linear-gradient(190deg ,pink, antiquewhite,white);
+}
+/* header */
+header h1{
+    text-align: center;
+    margin-bottom: 3%;
+    position: relative;
+    background-color: white;
+}
+h1{
+    color: pink;
+    padding: 1%;
+    transition: 150ms;
+}
+
+h1:hover{
+    color:white;
+    background-color: pink;
+    transform: scale(1.1);
+    transition: 150ms;
+
+}
+
+img{
+    width: 35%;
+    height: 18vw;
+    background-color: transparent;
+    margin: auto;
+    border:5px solid ;
+    padding: 8px;
+    border-radius: 10px;
+    transition: 150ms;
+    /*Gives it a picture like border behind it*/
+    background-color:pink;
+    border:solid 3vmin #eee;
+    border-bottom-color:#fff;
+    border-left-color:#eee;
+    border-radius:2px;
+    border-right-color:#eee;
+    border-top-color:#ddd;
+    box-shadow:0 0 5px 0 rgba(0,0,0,.25) inset, 0 5px 10px 5px rgba(0,0,0,.25);
+ }
+    
+.april{
+    text-align: center;
+    margin-bottom: 5%;
+}
+img:hover{
+    transform: scale(1.25);
+    transition: 150ms;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+
+
+/*Table*/
+table{
+    margin: auto;
+    margin-top: 0%;
+    margin-bottom: 3%;
+    width: 40vw;
+ 
+}
+/*  table header*/
+.month {
+    color: white;
+  background-color: pink;
+  border-bottom: 3px white solid;
+  padding: 50px;
+  font-size: 4rem;
+  
+}
+/*  days that are not aprilt*/
+.other{
+    opacity: .3;
+}
+
+.birthday{
+    color: purple;
+    font-weight: bold;
+}
+.birthday-bottom{
+    color: purple;
+    font-weight: bold;
+    text-align: left;
+    font-size: 12pt;
+    padding: 5px;
+}
+
+table th{
+    text-align: center;
+    color: white;
+    border: pink 2px solid;
+    background-color: pink;
+}
+
+table tr td{
+    border: pink 3px solid;
+    text-align: center;
+    padding: 20px;
+    transition: ease-out .15s;
+    
+}
+
+table td:hover{
+    background-color: pink;
+    color: white;
+    transition: ease-in .15s;
+}
+
+/*Footer*/
+footer{
+    background-color: pink;
+    color: white;
+    text-align: center;
+    margin: 0;
+    height: 7.5%;
+    bottom: 0;
+}
+h4{
+    padding-top:15px ;
+    padding-bottom:2px;
+}
+
+
+@media screen and (max-width: 1100px) {
+    img{
+        width: 50%;
+        height: 25vw;
+    }
+    
+}
+@media screen and (max-width: 800px) {
+    img{
+        width: 60%;
+        height: 30vw;
+    }
+    img:hover{
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    table {
+        width: 75vw;
+    }
+    
+    th  {
+        font-size: 4vw;
+    }
+    
+    td {
+        
+        font-size: 4vw;
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+    img{
+        width: 56%;
+        height: 28vw;
+    }
+    img:hover{
+        margin-top: 5%;
+        margin-bottom: 5%;
+        transform: scale(1.1);
+    }
+    table {
+        width: 65vw;
+    }
+ 
+    th {
+        font-size: 3vw;
+    }
+    
+    td {
+        
+        font-size: 3vw;
+    }
+}
